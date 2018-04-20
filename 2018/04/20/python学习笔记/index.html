@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="新手上路,日积月累," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="飞奔的弹幕君">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1. python里*args和**kwargs的用法引入参数*args和**kwargs，两个都是python中的可变参数。*args表示任何多个无名参数，它是一个tuple**kwargs表示关键字参数，它是一个dict。并且同时使用*args和**kwargs时，必须*args参数列要在**kwargs前12345678910def foo(*args, **kwargs):    prin">
+<meta name="keywords" content="新手上路,日积月累">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python学习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/04/20/python学习笔记/index.html">
 <meta property="og:site_name" content="飞奔的弹幕君">
+<meta property="og:description" content="1. python里*args和**kwargs的用法引入参数*args和**kwargs，两个都是python中的可变参数。*args表示任何多个无名参数，它是一个tuple**kwargs表示关键字参数，它是一个dict。并且同时使用*args和**kwargs时，必须*args参数列要在**kwargs前12345678910def foo(*args, **kwargs):    prin">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-20T12:49:32.236Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="飞奔的弹幕君">
+<meta name="twitter:title" content="python学习笔记">
+<meta name="twitter:description" content="1. python里*args和**kwargs的用法引入参数*args和**kwargs，两个都是python中的可变参数。*args表示任何多个无名参数，它是一个tuple**kwargs表示关键字参数，它是一个dict。并且同时使用*args和**kwargs时，必须*args参数列要在**kwargs前12345678910def foo(*args, **kwargs):    prin">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/20/python学习笔记/"/>
 
 
 
 
 
-  <title>飞奔的弹幕君</title>
+  <title>python学习笔记 | 飞奔的弹幕君</title>
   
 
 
@@ -150,8 +155,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,9 +228,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -256,9 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/20/python学习笔记/" itemprop="url">python学习笔记</a></h1>
+          <h1 class="post-title" itemprop="name headline">python学习笔记</h1>
         
 
         <div class="post-meta">
@@ -308,9 +310,7 @@
       
 
       
-        
-          
-            <h3 id="1-python里-args和-kwargs的用法"><a href="#1-python里-args和-kwargs的用法" class="headerlink" title="1. python里*args和**kwargs的用法"></a>1. python里*args和**kwargs的用法</h3><p><code>引入参数*args和**kwargs，两个都是python中的可变参数。*args表示任何多个无名参数，它是一个tuple</code><br><code>**kwargs表示关键字参数，它是一个dict。并且同时使用*args和**kwargs时，必须*args参数列要在**kwargs前</code><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'args = '</span>, args</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'kwargs = '</span>, kwargs</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'---------------------------------------'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    foo(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>)                             <span class="comment">#参数只传到*args中</span></span><br><span class="line">    foo(a=<span class="number">1</span>,b=<span class="number">2</span>,c=<span class="number">3</span>)                         <span class="comment">#参数只传到**kwargs中</span></span><br><span class="line">    foo(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>, a=<span class="number">1</span>,b=<span class="number">2</span>,c=<span class="number">3</span>)                <span class="comment">#参数可以传到*args和**kwargs中</span></span><br><span class="line">    foo(<span class="string">'a'</span>, <span class="number">1</span>, <span class="keyword">None</span>, a=<span class="number">1</span>, b=<span class="string">'2'</span>, c=<span class="number">3</span>)</span><br></pre></td></tr></table></figure></p>
+        <h3 id="1-python里-args和-kwargs的用法"><a href="#1-python里-args和-kwargs的用法" class="headerlink" title="1. python里*args和**kwargs的用法"></a>1. python里*args和**kwargs的用法</h3><p><code>引入参数*args和**kwargs，两个都是python中的可变参数。*args表示任何多个无名参数，它是一个tuple</code><br><code>**kwargs表示关键字参数，它是一个dict。并且同时使用*args和**kwargs时，必须*args参数列要在**kwargs前</code><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">foo</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'args = '</span>, args</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'kwargs = '</span>, kwargs</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'---------------------------------------'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    foo(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>)                             <span class="comment">#参数只传到*args中</span></span><br><span class="line">    foo(a=<span class="number">1</span>,b=<span class="number">2</span>,c=<span class="number">3</span>)                         <span class="comment">#参数只传到**kwargs中</span></span><br><span class="line">    foo(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>, a=<span class="number">1</span>,b=<span class="number">2</span>,c=<span class="number">3</span>)                <span class="comment">#参数可以传到*args和**kwargs中</span></span><br><span class="line">    foo(<span class="string">'a'</span>, <span class="number">1</span>, <span class="keyword">None</span>, a=<span class="number">1</span>, b=<span class="string">'2'</span>, c=<span class="number">3</span>)</span><br></pre></td></tr></table></figure></p>
 <p>运行结果：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">args =  (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">kwargs =  &#123;&#125;</span><br><span class="line">---------------------------------------</span><br><span class="line">args =  ()</span><br><span class="line">kwargs =  &#123;<span class="string">'a'</span>: <span class="number">1</span>, <span class="string">'c'</span>: <span class="number">3</span>, <span class="string">'b'</span>: <span class="number">2</span>&#125;</span><br><span class="line">---------------------------------------</span><br><span class="line">args =  (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">kwargs =  &#123;<span class="string">'a'</span>: <span class="number">1</span>, <span class="string">'c'</span>: <span class="number">3</span>, <span class="string">'b'</span>: <span class="number">2</span>&#125;</span><br><span class="line">---------------------------------------</span><br><span class="line">args =  (<span class="string">'a'</span>, <span class="number">1</span>, <span class="keyword">None</span>)</span><br><span class="line">kwargs =  &#123;<span class="string">'a'</span>: <span class="number">1</span>, <span class="string">'c'</span>: <span class="number">3</span>, <span class="string">'b'</span>: <span class="string">'2'</span>&#125;</span><br><span class="line">---------------------------------------</span><br></pre></td></tr></table></figure></p>
 <h3 id="2-python对txt文件的操作"><a href="#2-python对txt文件的操作" class="headerlink" title="2.python对txt文件的操作"></a>2.python对txt文件的操作</h3><p>2.1 使用<strong>open()</strong> 函数读取文本内容，本函数是打开一个文件并返回文件对象。如果文件不能打开，抛出异常OSError<br><code>open(file, mode=&#39;r&#39;, buffering=-1, encoding=None, errors=None, newline=None, closefd=T)</code><br>参数mode是指明打开文件的模式。默认值是’r’，表示使用文本的方式打开文件来读取。</p>
 <p>‘r’表示打开文件只读，不能写。</p>
@@ -331,8 +331,6 @@
 <h3 id="4-python实现读取文件夹里文件名功能"><a href="#4-python实现读取文件夹里文件名功能" class="headerlink" title="4.python实现读取文件夹里文件名功能"></a>4.python实现读取文件夹里文件名功能</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os </span><br><span class="line">path = <span class="string">'the path of the directory'</span>    <span class="comment"># 读取文件路径</span></span><br><span class="line">list_name = os.listdir(path)            <span class="comment"># 读取路径下文件和文件夹的名</span></span><br></pre></td></tr></table></figure>
 <p>则list_name就是文件夹里所以子文件夹和文件的列表，可以通过os.path.isfile和os.path.isdir来对列表里的项进行判断看是文件还是文件夹。</p>
 
-          
-        
       
     </div>
     
@@ -347,14 +345,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/新手上路-日积月累/" rel="tag"># 新手上路,日积月累</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -364,10 +368,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -375,6 +380,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -395,8 +404,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -447,6 +465,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-python里-args和-kwargs的用法"><span class="nav-number">1.</span> <span class="nav-text">1. python里*args和**kwargs的用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-python对txt文件的操作"><span class="nav-number">2.</span> <span class="nav-text">2.python对txt文件的操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-python函数shutil，实现文件的复制"><span class="nav-number">3.</span> <span class="nav-text">3.python函数shutil，实现文件的复制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-python实现读取文件夹里文件名功能"><span class="nav-number">4.</span> <span class="nav-text">4.python实现读取文件夹里文件名功能</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -587,6 +621,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
