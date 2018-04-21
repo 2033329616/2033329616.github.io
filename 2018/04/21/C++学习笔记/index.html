@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="C++,C++调用Python," />
 
 
 
@@ -81,13 +81,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="飞奔的弹幕君">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="2018-2-3 1. C++的头文件和源文件.h头文件只需预处理，.cpp才需要编译，一般在头文件里声明一个类及类的的方法，在源文件里实现函数的定义与实现，这样可以将声明和定义分开，利于构建大规模的程序。hello.h文件如下：12345678910111213141516#pragma once       //预编译一次，防止出现重复包含头文件的情况#include &quot;iostream&quot;#i">
+<meta name="keywords" content="C++,C++调用Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++学习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/04/21/C++学习笔记/index.html">
 <meta property="og:site_name" content="飞奔的弹幕君">
+<meta property="og:description" content="2018-2-3 1. C++的头文件和源文件.h头文件只需预处理，.cpp才需要编译，一般在头文件里声明一个类及类的的方法，在源文件里实现函数的定义与实现，这样可以将声明和定义分开，利于构建大规模的程序。hello.h文件如下：12345678910111213141516#pragma once       //预编译一次，防止出现重复包含头文件的情况#include &quot;iostream&quot;#i">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/result.jpg">
+<meta property="og:image" content="https://www.github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/c++%E8%B0%83%E7%94%A8python_3.jpg">
+<meta property="og:updated_time" content="2018-04-21T06:48:01.664Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="飞奔的弹幕君">
+<meta name="twitter:title" content="C++学习笔记">
+<meta name="twitter:description" content="2018-2-3 1. C++的头文件和源文件.h头文件只需预处理，.cpp才需要编译，一般在头文件里声明一个类及类的的方法，在源文件里实现函数的定义与实现，这样可以将声明和定义分开，利于构建大规模的程序。hello.h文件如下：12345678910111213141516#pragma once       //预编译一次，防止出现重复包含头文件的情况#include &quot;iostream&quot;#i">
+<meta name="twitter:image" content="https://www.github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/result.jpg">
 
 
 
@@ -117,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/21/C++学习笔记/"/>
 
 
 
 
 
-  <title>飞奔的弹幕君</title>
+  <title>C++学习笔记 | 飞奔的弹幕君</title>
   
 
 
@@ -152,8 +160,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -280,9 +287,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -312,9 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/21/C++学习笔记/" itemprop="url">C++学习笔记</a></h1>
+          <h1 class="post-title" itemprop="name headline">C++学习笔记</h1>
         
 
         <div class="post-meta">
@@ -386,19 +391,31 @@
       
 
       
-        
-          
-          2018-2-3
-1. C++的头文件和源文件.h头文件只需预处理，.cpp才需要编译，一般在头文件里声明一个类及类的的方法，在源文件里实现函数的定义与实现，这样可以将声明和定义分开，利于构建大规模的程序。hello.h文件如下：12345678910111213141516#pragma once
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/21/C++学习笔记/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p>2018-2-3</p>
+<h3 id="1-C-的头文件和源文件"><a href="#1-C-的头文件和源文件" class="headerlink" title="1. C++的头文件和源文件"></a><strong>1. C++的头文件和源文件</strong></h3><p><code>.h</code>头文件只需预处理，<code>.cpp</code>才需要编译，一般在头文件里声明一个类及类的的方法，在源文件里实现函数的<strong>定义</strong>与<strong>实现</strong>，这样可以将声明和定义分开，利于构建大规模的程序。<br><code>hello.h</code>文件如下：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> once       <span class="comment">//预编译一次，防止出现重复包含头文件的情况</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"iostream"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"string"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:                   <span class="comment">//共有函数及成员定义的关键词</span></span><br><span class="line">	Hello();             <span class="comment">//声明构造函数，构造函数最好不要有默认参数</span></span><br><span class="line">	~Hello();            <span class="comment">//声明析构函数</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">talk</span><span class="params">(<span class="keyword">int</span> number=<span class="number">0</span>)</span></span>;    <span class="comment">//声明共有成员函数,参数给出默认值  </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span>:            <span class="comment">//私有函数及成员定义的关键词</span></span><br><span class="line">	<span class="built_in">string</span> content; <span class="comment">//声明一个字符串变量</span></span><br><span class="line">	<span class="keyword">int</span> num;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p><code>hello.cpp</code>文件如下：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"hello.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//类的定义与实现</span></span><br><span class="line">Hello::Hello()      <span class="comment">//构造函数定义</span></span><br><span class="line">&#123;</span><br><span class="line">	content = <span class="string">"这是私有成员变量"</span>;      <span class="comment">//在构造函数中为成员变量赋值</span></span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"这是构造函数"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">Hello::~Hello()       <span class="comment">//析构函数定义</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"这是析构函数"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">void</span> Hello::talk(<span class="keyword">int</span> number)    <span class="comment">//成员函数定义</span></span><br><span class="line">&#123;</span><br><span class="line">	num = number;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt;<span class="string">"content:"</span>&lt;&lt; content &lt;&lt; <span class="built_in">endl</span>;  <span class="comment">//头文件中包含了string才能使用该句</span></span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"num:"</span> &lt;&lt; num &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>主函数main.cpp如下：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"iostream"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"hello.h"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Hello robot;      <span class="comment">//实例化一个对象</span></span><br><span class="line">	robot.talk(<span class="number">233</span>);  <span class="comment">//调用成员函数，默认参数为0</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>运行结果如下：</p>
+<p><img src="https://www.github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/result.jpg" alt="运行结果" title="result"></p>
+<h3 id="2-C-中的L和-T的作用"><a href="#2-C-中的L和-T的作用" class="headerlink" title="2. C++中的L和_T的作用"></a><strong>2. C++中的L和_T的作用</strong></h3><p>在一个字符串前加 <code>L</code>表示将ANSI字符串转换为unicode的字符串，每个字符占两个字节<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">strlen</span>(<span class="string">"abc"</span>) = <span class="number">3</span>;</span><br><span class="line"><span class="built_in">strlen</span>(<span class="string">L"asd"</span>) = <span class="number">6</span>;</span><br></pre></td></tr></table></figure></p>
+<p> _T宏可以把一个引号引起来的字符串，根据你的环境设置，使得编译器会根据编译目标环境选择合适的（Unicode还是ANSI）字符处理方式，如果你定义了UNICODE，那么_T宏会把字符串前面加一个L。这时 _T(“ABCD”) 相当于 L”ABCD” ，这是宽字符串。如果没有定义，那么_T宏不会在字符串前面加那个L，_T(“ABCD”) 就等价于 “ABCD”  </p>
+<h3 id="3-C-调用Python函数的方法"><a href="#3-C-调用Python函数的方法" class="headerlink" title="3. C++调用Python函数的方法"></a><strong>3. C++调用Python函数的方法</strong></h3><p> 这里使用vs2015编译程序，首先要设置项目的属性，把python的include目录和libs目录包含到项目中，设置如下：</p>
+<p> <img src="https://www.github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/c++%E8%B0%83%E7%94%A8python_3.jpg" alt="项目的属性设置" title="c++调用python_3"></p>
+<p> python程序如下：<br> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment"># python</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">convertStrToNum</span><span class="params">(string)</span>:</span></span><br><span class="line">	result = eval(string)</span><br><span class="line">	<span class="keyword">return</span> result</span><br></pre></td></tr></table></figure></p>
+<p> 这里的python程序当做模块来对待，文件夹名称为strToNum，文件名strToNum.py，在同一个文件夹下有<strong>init</strong>.py文件(内容可为空)来表示模块。</p>
+<p> 在<code>C++</code>程序中调用python函数时注意：python语句写成模块的形式；将python模块的路径添加到系统中，否则c++程序无法找到python模块，最好使用相对路径；</p>
+<p> 步骤：<br> 1.<code>Py_Initialize()</code>初始化python;<br> 2.定义PyObject相关指针，</p>
+<ul>
+<li>载入python模块</li>
+<li>加载模块函数</li>
+<li>添加参数列表</li>
+<li>调用python函数</li>
+<li>定义C++数据变量，转换python返回的参数为<code>C++</code>的数据类型，并用该变量接收</li>
+</ul>
+<p>3.<code>Py_Finalize()</code>释放资源</p>
+<p> c++程序如下<br> <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"iostream"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"Python.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"string"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"cstring"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Py_Initialize();</span><br><span class="line">	<span class="comment">//PyRun_SimpleString("x=eval('2 + 3*2')");    //运行单个python语句</span></span><br><span class="line">	<span class="comment">//PyRun_SimpleString("print(x)");</span></span><br><span class="line">	<span class="comment">//PyArg_Parse(x, "i");</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// 将Python工作路径切换到待调用模块所在目录，一定要保证路径名的正确性</span></span><br><span class="line">	<span class="built_in">string</span> path = <span class="string">".\\strToNum"</span>;                  <span class="comment">//相对路径，windows下</span></span><br><span class="line">	<span class="built_in">string</span> chdir_cmd = <span class="built_in">string</span>(<span class="string">"sys.path.append(\""</span>) + path + <span class="string">"\")"</span>;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">char</span>* cstr_cmd = chdir_cmd.c_str();</span><br><span class="line">	PyRun_SimpleString(<span class="string">"import sys"</span>);</span><br><span class="line">	PyRun_SimpleString(cstr_cmd);</span><br><span class="line">	PyRun_SimpleString(<span class="string">"import os"</span>);</span><br><span class="line">	PyRun_SimpleString(<span class="string">"print(os.getcwd())"</span>);    <span class="comment">//获取当前路径</span></span><br><span class="line">	PyRun_SimpleString(<span class="string">"print(sys.path)"</span>);</span><br><span class="line">	</span><br><span class="line">	PyObject *pModule = <span class="literal">NULL</span>;       <span class="comment">//接收python模块</span></span><br><span class="line">	PyObject *pFunc = <span class="literal">NULL</span>;         <span class="comment">//接收pyhton函数</span></span><br><span class="line">	PyObject *pResult = <span class="literal">NULL</span>;       <span class="comment">//接收python函数的返回结果</span></span><br><span class="line">	<span class="keyword">double</span> result = <span class="number">0</span>;              <span class="comment">//C++中接收最终计算结果的变量</span></span><br><span class="line"></span><br><span class="line">	pModule = PyImport_ImportModule(<span class="string">"strToNum"</span>);</span><br><span class="line">	<span class="keyword">if</span> (!pModule) <span class="comment">// 加载模块失败</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"[ERROR] Python get module failed."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"[INFO] Python get module succeed."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">	pFunc = PyObject_GetAttrString(pModule, <span class="string">"convertStrToNum"</span>);</span><br><span class="line">	<span class="keyword">if</span> (!pFunc || !PyCallable_Check(pFunc))  <span class="comment">// 验证是否加载成功</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"[ERROR] Can't find funftion (convertStrToNum)"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"[INFO] Get function (convertStrToNum) succeed."</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">	PyObject *pArgs = PyTuple_New(<span class="number">1</span>);         <span class="comment">//新建数组保存传入python函数的参数</span></span><br><span class="line">	PyTuple_SetItem(pArgs, <span class="number">0</span>, Py_BuildValue(<span class="string">"s"</span>, <span class="string">"1 + 2*4.3 -1"</span>));</span><br><span class="line">	<span class="comment">//PyObject *pArgs = Py_BuildValue("23");</span></span><br><span class="line">	pResult = PyEval_CallObject(pFunc, pArgs);  <span class="comment">//调用python函数</span></span><br><span class="line">	PyArg_Parse(pResult, <span class="string">"d"</span>, &amp;result);         <span class="comment">//python函数的返回结果转换为double</span></span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"result:"</span> &lt;&lt; result &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">	Py_Finalize();      <span class="comment">//释放资源</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p> 参考的文章：<br> <a href="http://blog.csdn.net/itbuluoge/article/details/13005369" target="_blank" rel="noopener"><code>C++</code>调用python返回值</a><br> <a href="http://blog.csdn.net/nynyvkhhiiii/article/details/17525865" target="_blank" rel="noopener">调用python的类函数</a><br> <a href="https://docs.microsoft.com/zh-cn/visualstudio/python/working-with-c-cpp-python-in-visual-studio" target="_blank" rel="noopener">使用与pyhton的<code>C++</code>扩展</a></p>
+
       
     </div>
     
@@ -413,162 +430,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/20/python学习笔记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="David">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="飞奔的弹幕君">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/20/python学习笔记/" itemprop="url">python学习笔记</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-20T20:49:59+08:00">
-                2018-04-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C++</a>
           
-
+            <a href="/tags/C-调用Python/" rel="tag"><i class="fa fa-tag"></i> C++调用Python</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          1. python里*args和**kwargs的用法引入参数*args和**kwargs，两个都是python中的可变参数。*args表示任何多个无名参数，它是一个tuple**kwargs表示关键字参数，它是一个dict。并且同时使用*args和**kwargs时，必须*args参数列要在**k
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/04/20/python学习笔记/" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/20/python学习笔记/" rel="next" title="python学习笔记">
+                <i class="fa fa-chevron-left"></i> python学习笔记
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -578,10 +471,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -589,6 +483,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -609,8 +507,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -691,6 +598,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-C-的头文件和源文件"><span class="nav-number">1.</span> <span class="nav-text">1. C++的头文件和源文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-C-中的L和-T的作用"><span class="nav-number">2.</span> <span class="nav-text">2. C++中的L和_T的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-C-调用Python函数的方法"><span class="nav-number">3.</span> <span class="nav-text">3. C++调用Python函数的方法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -838,6 +761,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
