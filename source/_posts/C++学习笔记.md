@@ -70,7 +70,7 @@ int main()
 ```
 运行结果如下：
 
-![运行结果][1]
+![enter description here][1]
 
 
 ### **2. C++中的L和_T的作用**
@@ -84,8 +84,9 @@ strlen(L"asd") = 6;
  ### **3. C++调用Python函数的方法**
  这里使用vs2015编译程序，首先要设置项目的属性，把python的include目录和libs目录包含到项目中，设置如下：
  
- ![项目的属性设置][2]
+ ![enter description here][2]
  
+
  python程序如下：
  ```python
  # python
@@ -186,9 +187,8 @@ int main()
  
 
 
-  [1]: https://www.github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/result.jpg "result"
-  [2]: https://www.github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/c++%E8%B0%83%E7%94%A8python_3.jpg "c++调用python_3"
-  [3]: http://blog.csdn.net/itbuluoge/article/details/13005369
+  [1]: http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/result.jpg "运行结果"
+  [2]: http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/c++%E8%B0%83%E7%94%A8python_3.jpg "项目的属性设置"
   [4]: http://blog.csdn.net/itbuluoge/article/details/13005369
   [5]: http://blog.csdn.net/nynyvkhhiiii/article/details/17525865
   [6]: https://docs.microsoft.com/zh-cn/visualstudio/python/working-with-c-cpp-python-in-visual-studio
