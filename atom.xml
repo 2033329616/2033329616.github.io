@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://2033329616.github.io/"/>
   <updated>2018-04-21T10:10:53.801Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://2033329616.github.io/</id>
   
   <author>
     <name>David</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>C++学习笔记</title>
-    <link href="http://yoursite.com/2018/04/21/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/04/21/C++学习笔记/</id>
+    <link href="https://2033329616.github.io/2018/04/21/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://2033329616.github.io/2018/04/21/C++学习笔记/</id>
     <published>2018-04-21T06:33:57.761Z</published>
     <updated>2018-04-21T10:10:53.801Z</updated>
     
@@ -35,19 +35,19 @@
     
     </summary>
     
-      <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+      <category term="C++" scheme="https://2033329616.github.io/categories/C/"/>
     
     
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+      <category term="C++" scheme="https://2033329616.github.io/tags/C/"/>
     
-      <category term="C++调用Python" scheme="http://yoursite.com/tags/C-%E8%B0%83%E7%94%A8Python/"/>
+      <category term="C++调用Python" scheme="https://2033329616.github.io/tags/C-%E8%B0%83%E7%94%A8Python/"/>
     
   </entry>
   
   <entry>
     <title>python学习笔记</title>
-    <link href="http://yoursite.com/2018/04/20/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/04/20/python学习笔记/</id>
+    <link href="https://2033329616.github.io/2018/04/20/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://2033329616.github.io/2018/04/20/python学习笔记/</id>
     <published>2018-04-20T12:49:59.065Z</published>
     <updated>2018-04-21T09:21:14.406Z</updated>
     
@@ -62,10 +62,10 @@
     
     </summary>
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://2033329616.github.io/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://2033329616.github.io/tags/Python/"/>
     
   </entry>
   
