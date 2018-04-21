@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://yoursite.com/2018/04/21/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-04-21T10:10:53.801Z</lastmod>
+    <data>
+        <display>
+        <title>C++学习笔记</title>
+        <pubTime>2018-04-21T06:33:57.761Z</pubTime>
+        
+        <tag>C++</tag>
+         
+        <tag>C++调用Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="C++" url="http://yoursite.com/categories/C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://yoursite.com/2018/04/20/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-04-21T09:21:14.406Z</lastmod>
+    <data>
+        <display>
+        <title>python学习笔记</title>
+        <pubTime>2018-04-20T12:49:59.065Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="http://yoursite.com/categories/Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+</urlset>
