@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Python,dlib,opencv," />
+  <meta name="keywords" content="docker," />
 
 
 
@@ -81,23 +81,30 @@
 
 
 
-<meta name="description" content="2017-8-10 1.dlib安装步骤ubuntu下最好别用anaconda，会出现很多问题，宁可自己安装各种包！  sudo apt-get install build-essential cmakesudo apt-get install libgtk-3-devsudo apt-get install libboost-all-devsudo apt-get install libopen">
-<meta name="keywords" content="Python,dlib,opencv">
+<meta name="description" content="2018-3-30 1.安装前的准备工作 确保是64位的操作系统 卸载旧版本的dockersudo apt-get remove docker docker-engine docker.iodockerde相关文件都在/var/lib/docker/路径下  2.使用docker仓库安装 首次安装docker时需要添加docker的仓库   更新软件源的仓库信息sudo apt-get updat">
+<meta name="keywords" content="docker">
 <meta property="og:type" content="article">
-<meta property="og:title" content="dlib安装总结">
-<meta property="og:url" content="https://2033329616.github.io/dlib安装总结.html">
+<meta property="og:title" content="docker在ubuntu上的安装及使用">
+<meta property="og:url" content="https://2033329616.github.io/docker在ubuntu上的安装及使用.html">
 <meta property="og:site_name" content="飞奔的弹幕君">
-<meta property="og:description" content="2017-8-10 1.dlib安装步骤ubuntu下最好别用anaconda，会出现很多问题，宁可自己安装各种包！  sudo apt-get install build-essential cmakesudo apt-get install libgtk-3-devsudo apt-get install libboost-all-devsudo apt-get install libopen">
+<meta property="og:description" content="2018-3-30 1.安装前的准备工作 确保是64位的操作系统 卸载旧版本的dockersudo apt-get remove docker docker-engine docker.iodockerde相关文件都在/var/lib/docker/路径下  2.使用docker仓库安装 首次安装docker时需要添加docker的仓库   更新软件源的仓库信息sudo apt-get updat">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/error1.jpg">
-<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox0.jpg">
-<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox.jpg">
-<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox2_1.jpg">
-<meta property="og:updated_time" content="2018-04-21T16:01:08.460Z">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2020-41-23.png">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2020-57-04.png">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2021-31-44.png">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2021-34-55.png">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2014-44-02.png">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2014-53-50.png">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2015-02-54.png">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2023-04-59.png">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2023-16-41.png">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-04-01%2000-04-35.png">
+<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-04-01%2000-16-54.png">
+<meta property="og:updated_time" content="2018-04-30T13:48:01.150Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="dlib安装总结">
-<meta name="twitter:description" content="2017-8-10 1.dlib安装步骤ubuntu下最好别用anaconda，会出现很多问题，宁可自己安装各种包！  sudo apt-get install build-essential cmakesudo apt-get install libgtk-3-devsudo apt-get install libboost-all-devsudo apt-get install libopen">
-<meta name="twitter:image" content="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/error1.jpg">
+<meta name="twitter:title" content="docker在ubuntu上的安装及使用">
+<meta name="twitter:description" content="2018-3-30 1.安装前的准备工作 确保是64位的操作系统 卸载旧版本的dockersudo apt-get remove docker docker-engine docker.iodockerde相关文件都在/var/lib/docker/路径下  2.使用docker仓库安装 首次安装docker时需要添加docker的仓库   更新软件源的仓库信息sudo apt-get updat">
+<meta name="twitter:image" content="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2020-41-23.png">
 
 
 
@@ -127,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://2033329616.github.io/dlib安装总结.html"/>
+  <link rel="canonical" href="https://2033329616.github.io/docker在ubuntu上的安装及使用.html"/>
 
 
 
 
 
-  <title>dlib安装总结 | 飞奔的弹幕君</title>
+  <title>docker在ubuntu上的安装及使用 | 飞奔的弹幕君</title>
   
 
 
@@ -304,7 +311,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://2033329616.github.io/dlib安装总结.html">
+    <link itemprop="mainEntityOfPage" href="https://2033329616.github.io/docker在ubuntu上的安装及使用.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="David">
@@ -321,7 +328,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">dlib安装总结</h1>
+          <h1 class="post-title" itemprop="name headline">docker在ubuntu上的安装及使用</h1>
         
 
         <div class="post-meta">
@@ -333,8 +340,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-21T22:00:43+08:00">
-                2018-04-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-30T19:37:29+08:00">
+                2018-04-30
               </time>
             
 
@@ -356,19 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/Opencv/" itemprop="url" rel="index">
-                    <span itemprop="name">Opencv</span>
+                  <a href="/categories/docker/" itemprop="url" rel="index">
+                    <span itemprop="name">docker</span>
                   </a>
                 </span>
 
@@ -384,7 +380,7 @@
 
           
           
-             <span id="/dlib安装总结.html" class="leancloud_visitors" data-flag-title="dlib安装总结">
+             <span id="/docker在ubuntu上的安装及使用.html" class="leancloud_visitors" data-flag-title="docker在ubuntu上的安装及使用">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -415,90 +411,124 @@
       
 
       
-        <p>2017-8-10</p>
-<h3 id="1-dlib安装步骤"><a href="#1-dlib安装步骤" class="headerlink" title="1.dlib安装步骤"></a>1.dlib安装步骤</h3><p>ubuntu下最好别用anaconda，会出现很多问题，宁可自己安装各种包！</p>
-<blockquote>
-<p>sudo apt-get install build-essential cmake<br>sudo apt-get install libgtk-3-dev<br>sudo apt-get install libboost-all-dev<br>sudo apt-get install libopenblas-dev liblapack-dev  # 提高cpu处理速度</p>
-</blockquote>
-<p>#pip install scikit-image<br>sudo apt-get install python-skimage<br>pip install dlib</p>
-<p>如果pip安装失败，可以直接从pypi上下载安装包，离线安装！<br>如果dlib指令安装失败还可以编译源码，源码里使用<code>sudo python setup.py install</code>，就可以安装了，仅python的API，前提是setuptools已经安装完成。</p>
-<h3 id="2-ubuntu16-06安装opencv3-3"><a href="#2-ubuntu16-06安装opencv3-3" class="headerlink" title="2.ubuntu16.06安装opencv3.3"></a>2.ubuntu16.06安装opencv3.3</h3><p>1.安装各种依赖库</p>
-<blockquote>
-<p>[compiler] <code>sudo apt-get install build-essential</code><br>[required] <code>sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev</code><br>[optional] <code>sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev</code></p>
-</blockquote>
-<p>2.下载源码后生成编译文件<br>2.1创建一个文件夹用来放cmake后的编译文件</p>
-<blockquote>
-<p>cd ~/opencv<br>mkdir build<br>cd build</p>
-</blockquote>
-<p>2.2cmake后创建make所需的文件</p>
-<blockquote>
-<p><code>cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..</code></p>
-</blockquote>
-<p>build文件夹下会产生makefile文件用于编译，cmake的编译选项还有其他的，但目前用上面的就够了，python的接口也包含进去了</p>
-<p>3.编译源码产生对象文件(<strong>.o</strong>文件)</p>
-<blockquote>
-<p><code>make -j4</code> # j4表示开启4个线程<br><code>sudo make install</code> # 安装opencv库到系统中</p>
-</blockquote>
-<ol start="4">
-<li>配置opencv.conf file ，加入环境变量</li>
+        <p>2018-3-30</p>
+<h4 id="1-安装前的准备工作"><a href="#1-安装前的准备工作" class="headerlink" title="1.安装前的准备工作"></a><strong>1.安装前的准备工作</strong></h4><ol>
+<li>确保是64位的操作系统</li>
+<li>卸载旧版本的docker<br><code>sudo apt-get remove docker docker-engine docker.io</code><br>dockerde相关文件都在<code>/var/lib/docker/</code>路径下</li>
 </ol>
-<p><img src="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/error1.jpg" alt="enter description here" title="不进行此步骤出现的错误"></p>
-<blockquote>
-<p><code>sudo gedit /etc/ld.so.conf.d/opencv.conf</code></p>
+<h4 id="2-使用docker仓库安装"><a href="#2-使用docker仓库安装" class="headerlink" title="2.使用docker仓库安装"></a><strong>2.使用docker仓库安装</strong></h4><blockquote>
+<p><strong>首次安装docker时需要添加docker的仓库</strong></p>
 </blockquote>
-<p>如果没有该文件，则上述的命令会创建该文件，在opencv.conf里面加入 <code>/usr/local/lib</code></p>
-<blockquote>
-<p><code>sudo ldconfig</code> #更新库目录</p>
+<ol>
+<li>更新软件源的仓库信息<br><code>sudo apt-get update</code></li>
+<li>安装包来使apt通过HTTPS来使用docker仓库<br><code>sudo apt-get install apt-transport-https ca-certificates \</code><br><code>curl software-properties-common</code>    </li>
+<li>添加docker的官方GPG证书<br><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg \</code><br><code>| sudo apt-key add -</code><ol start="4">
+<li>验证是否添加成功带有fingerprint的key<br><code>sudo apt-key fingerprint 0EBFCD88</code></li>
+<li>添加稳定的docker仓库<br><code>sudo add-apt-repository \</code><br><code>&quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \</code><br><code>$(lsb_release -cs) stable&quot;</code><blockquote>
+<p><strong>安装docker-ce</strong></p>
 </blockquote>
-<hr>
-<p><a href="http://jingpin.jikexueyuan.com/article/36054.html" target="_blank" rel="noopener">Ubuntu 安装OpenCV3.0.0</a> blog里还有下述步骤：<br>打开文件<code>bash.bashrc</code></p>
-<blockquote>
-<p><code>sudo gedit /etc/bash.bashrc</code></p>
+</li>
+</ol>
+</li>
+</ol>
+<ol>
+<li>再次更新仓库信息<br><code>sudo apt-get update</code></li>
+<li>指令安装docker<br>注意:<code>sudo apt-get install docker-ce</code>只能安装目前最高的版本,但通常使用下面方法来选择要安装的版本<br><code>apt-cache madison docker-ce</code>查看目前的多个版本,结果如下:</li>
+</ol>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2020-41-23.png" alt="目前docker-ce的版本" title="目前docker-ce的版本"><br> 使用<code>sudo apt-get install docker-ce=&lt;VERSION&gt;</code>安装特定的版本,这里使用17.12.0版本,指令为:<code>sudo apt-get install docker-ce=17.12.0~ce-0~ubuntu</code></p>
+<ol start="3">
+<li>验证安装的结果<br>如果安装docker安装正确,则运行<code>sudo docker run hello-world</code>后输出下面结果:</li>
+</ol>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2020-57-04.png" alt="docker安装成功" title="docker安装成功"></p>
+<ul>
+<li>其他详细的安装详情见官网 <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1" target="_blank" rel="noopener">https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1</a></li>
+</ul>
+<h4 id="4-创建docker组"><a href="#4-创建docker组" class="headerlink" title="4.创建docker组"></a><strong>4.创建docker组</strong></h4><blockquote>
+<p>该操作的作用:不用每次使用docker指令时都输入sudo</p>
+<ol>
+<li>创建docker组<br><code>sudo groupadd docker</code>创建docker组<br><code>cat /etc/group | grep -i docker</code>查看docker组的基本情况如下,目前该组中还没有添加用户:</li>
+</ol>
 </blockquote>
-<p>加入下面两行</p>
-<blockquote>
-<p><code>PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig</code><br><code>export PKG_CONFIG_PATH</code></p>
-</blockquote>
-<p>我这里进行测试，没有该步骤也行！</p>
-<hr>
-<p>5.测试opencv<br>5.1 C++版本</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"opencv2/opencv.hpp"</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> cv;  </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;    </span><br><span class="line">Mat src = imread(<span class="string">"test3.jpg"</span>,<span class="number">1</span>); </span><br><span class="line">imshow(<span class="string">"src"</span>,src);   </span><br><span class="line">waitKey(<span class="number">0</span>);  </span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>; &#125;</span><br></pre></td></tr></table></figure>
-<p>编译方式：<br>1 命令行<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">g++  opencvtest.cpp -o opencvtest `pkg-config  --cflags --libs opencv`</span><br></pre></td></tr></table></figure></p>
-<p>cflags前面是两个横线</p>
-<p>2 借助cmake，写CMakeLists.txt</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cmake_minimum_required</span>(VERSION <span class="number">2.8</span>)</span><br><span class="line"><span class="keyword">project</span>(opencvtest)</span><br><span class="line"><span class="keyword">find_package</span>( OpenCV REQUIRED )</span><br><span class="line"><span class="keyword">add_executable</span>( opencvtest opencvtest.cpp )</span><br><span class="line"><span class="keyword">target_link_libraries</span>( opencvtest <span class="variable">$&#123;OpenCV_LIBS&#125;</span> )</span><br></pre></td></tr></table></figure>
-<p>之后 执行</p>
-<blockquote>
-<p><code>cmake .</code><br><code>Make</code>   # 生成可执行文件<br><code>./ test</code> # 运行程序进行测试</p>
-</blockquote>
-<p>5.2python版本<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line">img = cv2.imread(<span class="string">'test3.jpg'</span>,<span class="number">1</span>)</span><br><span class="line">cv2.imshow(<span class="string">'img'</span>,img)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p><code>python test.py</code> #运行该出现，会显示一张图片</p>
-</blockquote>
-<p>至此opencv的配置完成！</p>
-<h3 id="3-virtualbox虚拟机的ubuntu系统下打开笔记本自带的摄像头"><a href="#3-virtualbox虚拟机的ubuntu系统下打开笔记本自带的摄像头" class="headerlink" title="3.virtualbox虚拟机的ubuntu系统下打开笔记本自带的摄像头"></a>3.virtualbox虚拟机的ubuntu系统下打开笔记本自带的摄像头</h3><blockquote>
-<p><code>cheese</code>  #在ubuntu里可以打开摄像头</p>
-</blockquote>
-<p>  如果打不开，则需要设置virtualbox。<br>  1.首先去官网下载virtualbox的扩展包进行安装，如下图：</p>
-<p>  <img src="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox0.jpg" alt="enter description here" title="3.1 安装扩展包"></p>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2021-31-44.png" alt="enter description here" title="docker组的信息"><br>2.为docker组添加用户<br><code>sudo usermod -aG docker $USER</code>,其中<code>$USER</code>表示当前的用户,再次查看docker用户组的信息如下,该组中多了个david用户(当前登录的用户):</p>
+<ol start="3">
+<li>注销登录后,用户组生效,就可以直接使用不带sudo的docker指令</li>
+</ol>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2021-34-55.png" alt="enter description here" title="david用户加入docker用户组"></p>
+<h4 id="5-安装nvidia-docker来支持GPU"><a href="#5-安装nvidia-docker来支持GPU" class="headerlink" title="5.安装nvidia-docker来支持GPU"></a><strong>5.安装nvidia-docker来支持GPU</strong></h4><ol>
+<li>卸载旧版本的nvidia-docker及GPU容器<br><code>docker volume ls -q -f driver=nvidia-docker |  \</code><br><code>xargs -r -I{} -n1 docker ps -q -a -f volume={} | \</code><br><code>xargs -r docker rm -f</code><br><code>sudo apt-get purge -y nvidia-docker</code></li>
+<li>添加仓库<ul>
+<li>添加key:<br><code>curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
+sudo apt-key add -</code></li>
+<li>获取系统版本号:<br><code>distribution=$(. /etc/os-release;echo $ID$VERSION_ID)</code> </li>
+<li>添加仓库:<br><code>curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \</code><br><code>sudo tee /etc/apt/sources.list.d/nvidia-docker.list</code> </li>
+</ul>
+<ol start="3">
+<li>更新仓库信息<br><code>sudo apt-get update</code></li>
+</ol>
+</li>
+<li><p><strong>安装nvidia-docker2并配置docker dameon加速镜像下载</strong></p>
+<ul>
+<li>安装nvidia的gpu支持:<br><code>sudo apt-get install -y nvidia-docker2</code></li>
+<li>修改<code>/etc/docker/daemon.json</code>文件内容如下:<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> &#123;</span><br><span class="line">  <span class="attr">"registry-mirrors"</span>: [<span class="string">"http://58167a06.m.daocloud.io"</span>],</span><br><span class="line">  <span class="attr">"runtimes"</span>: &#123;</span><br><span class="line">        <span class="attr">"nvidia"</span>: &#123;</span><br><span class="line">            <span class="attr">"path"</span>: <span class="string">"/usr/bin/nvidia-container-runtime"</span>,</span><br><span class="line">            <span class="attr">"runtimeArgs"</span>: []</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>其中链接部分是使用国内的<strong>加速镜像</strong>,这里使用dalcloud的加速镜像,如果使用阿里云的加速镜像,将链接替换为<a href="https://8vntriz8.mirror.aliyuncs.com" target="_blank" rel="noopener">https://8vntriz8.mirror.aliyuncs.com</a>即可,该链接是在注册阿里开发者平台时生成的,具体的细节见<a href="https://www.cnblogs.com/atuotuo/p/6264800.html" target="_blank" rel="noopener">https://www.cnblogs.com/atuotuo/p/6264800.html</a>.</p>
+<ul>
+<li>重载daemon使配置生效,并重启docker:<br><code>sudo pkill -SIGHUP dockerd</code><br><code>sudo systemctl daemon-reload</code><br><code>sudo systemctl restart docker</code></li>
+</ul>
+</li>
+<li><p>测试安装情况<br><code>docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi</code>会下载cuda镜像来测试</p>
+</li>
+</ol>
+<h4 id="5-使用docker安装tensorflow"><a href="#5-使用docker安装tensorflow" class="headerlink" title="5.使用docker安装tensorflow"></a><strong>5.使用docker安装tensorflow</strong></h4><ul>
+<li>打开tensorflow的docker<a href="https://hub.docker.com/r/tensorflow/tensorflow/tags/" target="_blank" rel="noopener">镜像仓库</a>如下:</li>
+</ul>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2014-44-02.png" alt="tensorflow镜像" title="tensorflow的镜像"><br>使用指令<code>nvidia-docker run -it -p 8888:8888 tensorflow/tensorflow:&lt;mirror tag&gt;</code>下载并运行tag对应的镜像,这里使用tag为1.7.0-gpu-py3的镜像输出结果如下.</p>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2014-53-50.png" alt="运行tensorflow的镜像" title="运行tensorflow的镜像"><br>将最下面的链接复制到浏览器就可以打开ipython notebook并使用对应的镜像环境了.</p>
+<ul>
+<li><p>注意:首次运行上面的指令会下载对应tag的镜像,之后运行可以直接从本地读取该镜像.</p>
+</li>
+<li><p>使用<code>docker images</code>查看已下载镜像信息,结果如下:</p>
+</li>
+</ul>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2015-02-54.png" alt="enter description here" title="已下载的镜像信息"></p>
+<ul>
+<li>使用<code>docker rmi -f &lt;IMAGE ID&gt;</code> 删除对应ID号的镜像.</li>
+</ul>
+<h4 id="6-将主机的目录挂载到容器中"><a href="#6-将主机的目录挂载到容器中" class="headerlink" title="6.将主机的目录挂载到容器中"></a><strong>6.将主机的目录挂载到容器中</strong></h4><ol>
+<li>首先使用<code>docker ps</code>查看目前运行的容器，结果如下，使用<code>docker kill &lt;container ID&gt;</code>关闭ID号对应的容器:</li>
+</ol>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2023-04-59.png" alt="enter description here" title="查看目前运行的容器"></p>
 <ol start="2">
-<li>然后设置虚拟机的usb选项，并勾选设备选项里的摄像头选项</li>
+<li>使用<code>docker exec -it 2783ad1bf2dc /bin/bash</code>登录该容器,其中<code>2783ad1bf2dc</code>为第一步的结果中看到的容器ID号,登录的结果如下:</li>
 </ol>
-<p><img src="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox.jpg" alt="enter description here" title="3.2 设置usb控制器为usb2.0"></p>
-<p> <img src="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox2_1.jpg" alt="enter description here" title="3.3 勾选设备选项里的摄像头"></p>
-<p>  设置好后再使用<code>cheese</code>指令打开摄像头，或运行与摄像头相关的程序，由于是虚拟机的原因摄像头比较卡。</p>
-<h3 id="4-whl文件安装中的问题处理"><a href="#4-whl文件安装中的问题处理" class="headerlink" title="4.whl文件安装中的问题处理"></a>4.whl文件安装中的问题处理</h3><p> 原文件： <code>opencv_python-3.1.0-cp34-cp34m-win_amd64.whl</code>，<br>改后的文件：<code>opencv_python-3.1.0-cp34-none-win_amd64.whl</code><br> <strong>把原来文件名中间的cp34m变为none(其实不改也能安装成功)，并且cp34要和python的版本对应，如cp36表示python版本3.6，如果不改的话不然会出现下面的问题：(但只是更改版本号可能会带来兼容性问题)</strong></p>
-<p>opencv_python-3.1.0-cp34-cp34m-win_amd64.whl is not a supported wheel on this platform.</p>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2023-16-41.png" alt="enter description here" title="容器的主目录结构"></p>
 <blockquote>
-<p>pip3 install 路径名\opencv_python-3.1.0-cp34-none-win_amd64.whl<br>安装该模块 </p>
+<p>登录成功后,终端的用户和工作组组也随着改变,该容器的目录结构与一般的Linux相同,输入<code>exit</code>或使用按键<code>ctrl + d</code>退出登录状态.</p>
 </blockquote>
-<h3 id="5-pip换源提升安装库的速度和稳定性"><a href="#5-pip换源提升安装库的速度和稳定性" class="headerlink" title="5. pip换源提升安装库的速度和稳定性"></a>5. <strong>pip换源提升安装库的速度和稳定性</strong></h3><p>网上有很多可用的源，<br>豆瓣：<a href="http://pypi.douban.com/simple/" target="_blank" rel="noopener">http://pypi.douban.com/simple/</a><br> 清华：<a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a></p>
-<p> <code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple 库名</code> 这样就会从清华这边的镜像去安装库。</p>
-<p> 更改配置文件：<br>1.Linux系统<br>修改<code>~/.pip/pip.conf</code> (没有就创建一个)， 修改 index-url至tuna，内容如下：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></p>
-<p>2.windows<br>直接在user目录中创建一个pip目录，如：C:\Users\xx\pip，新建文件<strong>pip.ini</strong>，内容如下<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></p>
-   <font color="red" face="宋体">进过不断的试错，总结如下：<br>   1.首先为pip换源，这样大部分的库可以直接指令安装<br>   2.换源后安装失败的，可以在<a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#opencv" target="_blank" rel="noopener">source1</a>和<a href="https://pypi.python.org/pypi" target="_blank" rel="noopener">source2</a>下载whl文件离线安装<br>   3.大部分依赖库安装失败都是下载失败导致，所以上述两种方法可以解决大部分问题</font>
-
-<p> <a href="http://blog.csdn.net/qw_xingzhe/article/details/52675158" target="_blank" rel="noopener">更改pip源至国内镜像，显著提升下载速度</a></p>
+<blockquote>
+<p>OPTIONS说明：</p>
+<ul>
+<li>-d :分离模式: 在后台运行</li>
+<li>-i :标准输入,即使没有附加也保持STDIN 打开<ul>
+<li>-t :分配一个伪终端,后面必须加<code>/bin/bash</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ol start="3">
+<li>这里将<code>/home/david/docker/tensorflow</code>目录挂载到1.7.0-gpu-py3容器的<code>/notebooks/tensorflow</code>目录下,将主机的目录挂载到容器后,修改主机的文件,容器中的文件也会同步更新,这样比较方便,操作如下:<br><code>docker run -it -v &lt;主机目录&gt;:&lt;容器挂载目录&gt; &lt;容器镜像&gt; /bin/bash</code>, <code>-v</code>表示挂载目录的选项;<strong>冒号</strong>前面是主机目录,后面是容器目录;最后面接容器镜像</li>
+</ol>
+<blockquote>
+<p>这里的挂载目录操作:<br><code>docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow tensorflow/tensorflow:1.7.0-gpu-py3 /bin/bash</code></p>
+</blockquote>
+<p>查看挂载结果如下:</p>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-04-01%2000-04-35.png" alt="enter description here" title="主机目录的挂载结果"><br>可以看出,在容器的<code>/notebooks</code>目录下已经出现了<code>tensorflow</code>目录,并且该文件夹下已经出现了在主机目录<code>/home/david/docker/tensorflow</code>里的<code>test.py</code>文件,即目录挂载成功.</p>
+<blockquote>
+<p><strong>注意:使用下面指令可以一步到位!打开ipython notebook并挂载主机目录到容器.</strong><br><code>docker run -it -v /home/david/docker/tensorflow:/notebooks/tensorflow -p 8888:8888 tensorflow/tensorflow:1.7.0-gpu-py3</code></p>
+</blockquote>
+<p>运行结果:</p>
+<p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-04-01%2000-16-54.png" alt="enter description here" title="运行结果"></p>
 
       
     </div>
@@ -516,11 +546,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
-          
-            <a href="/tags/dlib/" rel="tag"><i class="fa fa-tag"></i> dlib</a>
-          
-            <a href="/tags/opencv/" rel="tag"><i class="fa fa-tag"></i> opencv</a>
+            <a href="/tags/docker/" rel="tag"><i class="fa fa-tag"></i> docker</a>
           
         </div>
       
@@ -533,8 +559,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/C++学习笔记.html" rel="next" title="C++学习笔记">
-                <i class="fa fa-chevron-left"></i> C++学习笔记
+              <a href="/dlib安装总结.html" rel="next" title="dlib安装总结">
+                <i class="fa fa-chevron-left"></i> dlib安装总结
               </a>
             
           </div>
@@ -543,8 +569,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/docker在ubuntu上的安装及使用.html" rel="prev" title="docker在ubuntu上的安装及使用">
-                docker在ubuntu上的安装及使用 <i class="fa fa-chevron-right"></i>
+              <a href="/linux系统安装及软件配置.html" rel="prev" title="linux系统安装及软件配置">
+                linux系统安装及软件配置 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -704,7 +730,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-dlib安装步骤"><span class="nav-number">1.</span> <span class="nav-text">1.dlib安装步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-ubuntu16-06安装opencv3-3"><span class="nav-number">2.</span> <span class="nav-text">2.ubuntu16.06安装opencv3.3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-virtualbox虚拟机的ubuntu系统下打开笔记本自带的摄像头"><span class="nav-number">3.</span> <span class="nav-text">3.virtualbox虚拟机的ubuntu系统下打开笔记本自带的摄像头</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-whl文件安装中的问题处理"><span class="nav-number">4.</span> <span class="nav-text">4.whl文件安装中的问题处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-pip换源提升安装库的速度和稳定性"><span class="nav-number">5.</span> <span class="nav-text">5. pip换源提升安装库的速度和稳定性</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-安装前的准备工作"><span class="nav-number">1.</span> <span class="nav-text">1.安装前的准备工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-使用docker仓库安装"><span class="nav-number">2.</span> <span class="nav-text">2.使用docker仓库安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-创建docker组"><span class="nav-number">3.</span> <span class="nav-text">4.创建docker组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-安装nvidia-docker来支持GPU"><span class="nav-number">4.</span> <span class="nav-text">5.安装nvidia-docker来支持GPU</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-使用docker安装tensorflow"><span class="nav-number">5.</span> <span class="nav-text">5.使用docker安装tensorflow</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-将主机的目录挂载到容器中"><span class="nav-number">6.</span> <span class="nav-text">6.将主机的目录挂载到容器中</span></a></li></ol></div>
             
 
           </div>
