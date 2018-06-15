@@ -7,7 +7,7 @@
 
 <html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -155,7 +155,7 @@
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
-  </script>
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
@@ -169,7 +169,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -422,7 +422,7 @@
 <ol>
 <li>更新软件源的仓库信息<br><code>sudo apt-get update</code></li>
 <li>安装包来使apt通过HTTPS来使用docker仓库<br><code>sudo apt-get install apt-transport-https ca-certificates \</code><br><code>curl software-properties-common</code>    </li>
-<li>添加docker的官方GPG证书<br><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg \</code><br><code>| sudo apt-key add -</code><ol start="4">
+<li>添加docker的官方GPG证书<br><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg \</code><br><code>| sudo apt-key add -</code><ol>
 <li>验证是否添加成功带有fingerprint的key<br><code>sudo apt-key fingerprint 0EBFCD88</code></li>
 <li>添加稳定的docker仓库<br><code>sudo add-apt-repository \</code><br><code>&quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \</code><br><code>$(lsb_release -cs) stable&quot;</code><blockquote>
 <p><strong>安装docker-ce</strong></p>
@@ -436,7 +436,7 @@
 <li>指令安装docker<br>注意:<code>sudo apt-get install docker-ce</code>只能安装目前最高的版本,但通常使用下面方法来选择要安装的版本<br><code>apt-cache madison docker-ce</code>查看目前的多个版本,结果如下:</li>
 </ol>
 <p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2020-41-23.png" alt="目前docker-ce的版本" title="目前docker-ce的版本"><br> 使用<code>sudo apt-get install docker-ce=&lt;VERSION&gt;</code>安装特定的版本,这里使用17.12.0版本,指令为:<code>sudo apt-get install docker-ce=17.12.0~ce-0~ubuntu</code></p>
-<ol start="3">
+<ol>
 <li>验证安装的结果<br>如果安装docker安装正确,则运行<code>sudo docker run hello-world</code>后输出下面结果:</li>
 </ol>
 <p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2020-57-04.png" alt="docker安装成功" title="docker安装成功"></p>
@@ -450,7 +450,7 @@
 </ol>
 </blockquote>
 <p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2021-31-44.png" alt="enter description here" title="docker组的信息"><br>2.为docker组添加用户<br><code>sudo usermod -aG docker $USER</code>,其中<code>$USER</code>表示当前的用户,再次查看docker用户组的信息如下,该组中多了个david用户(当前登录的用户):</p>
-<ol start="3">
+<ol>
 <li>注销登录后,用户组生效,就可以直接使用不带sudo的docker指令</li>
 </ol>
 <p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-30%2021-34-55.png" alt="enter description here" title="david用户加入docker用户组"></p>
@@ -462,7 +462,7 @@ sudo apt-key add -</code></li>
 <li>获取系统版本号:<br><code>distribution=$(. /etc/os-release;echo $ID$VERSION_ID)</code> </li>
 <li>添加仓库:<br><code>curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \</code><br><code>sudo tee /etc/apt/sources.list.d/nvidia-docker.list</code> </li>
 </ul>
-<ol start="3">
+<ol>
 <li>更新仓库信息<br><code>sudo apt-get update</code></li>
 </ol>
 </li>
@@ -499,14 +499,12 @@ sudo apt-key add -</code></li>
 <li>首先使用<code>docker ps</code>查看目前运行的容器，结果如下，使用<code>docker kill &lt;container ID&gt;</code>关闭ID号对应的容器:</li>
 </ol>
 <p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2023-04-59.png" alt="enter description here" title="查看目前运行的容器"></p>
-<ol start="2">
+<ol>
 <li>使用<code>docker exec -it 2783ad1bf2dc /bin/bash</code>登录该容器,其中<code>2783ad1bf2dc</code>为第一步的结果中看到的容器ID号,登录的结果如下:</li>
 </ol>
 <p><img src="http://p7jji9nvf.bkt.clouddn.com/Screenshot%20from%202018-03-31%2023-16-41.png" alt="enter description here" title="容器的主目录结构"></p>
 <blockquote>
 <p>登录成功后,终端的用户和工作组组也随着改变,该容器的目录结构与一般的Linux相同,输入<code>exit</code>或使用按键<code>ctrl + d</code>退出登录状态.</p>
-</blockquote>
-<blockquote>
 <p>OPTIONS说明：</p>
 <ul>
 <li>-d :分离模式: 在后台运行</li>
@@ -516,7 +514,7 @@ sudo apt-key add -</code></li>
 </li>
 </ul>
 </blockquote>
-<ol start="3">
+<ol>
 <li>这里将<code>/home/david/docker/tensorflow</code>目录挂载到1.7.0-gpu-py3容器的<code>/notebooks/tensorflow</code>目录下,将主机的目录挂载到容器后,修改主机的文件,容器中的文件也会同步更新,这样比较方便,操作如下:<br><code>docker run -it -v &lt;主机目录&gt;:&lt;容器挂载目录&gt; &lt;容器镜像&gt; /bin/bash</code>, <code>-v</code>表示挂载目录的选项;<strong>冒号</strong>前面是主机目录,后面是容器目录;最后面接容器镜像</li>
 </ol>
 <blockquote>
@@ -658,7 +656,7 @@ sudo apt-key add -</code></li>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -669,7 +667,7 @@ sudo apt-key add -</code></li>
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -680,7 +678,7 @@ sudo apt-key add -</code></li>
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -748,7 +746,7 @@ sudo apt-key add -</code></li>
             <h3 class="widget-title">Tag Cloud</h3>
           <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width=100%">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-调用Python/">C++调用Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dlib/">dlib</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fopen/">fopen</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/matlab/">matlab</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opencv/">opencv</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime配置/">sublime配置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu系统/">ubuntu系统</a><span class="tag-list-count">1</span></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-调用Python/">C++调用Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dlib/">dlib</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fopen/">fopen</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/matlab/">matlab</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opencv/">opencv</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime配置/">sublime配置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu系统/">ubuntu系统</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日积月累/">日积月累</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
           </div>
           </div>
@@ -1388,13 +1386,15 @@ sudo apt-key add -</code></li>
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(bp, s);
 })();
-</script>
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
   
   
 
   
+  
+
 
   
 
