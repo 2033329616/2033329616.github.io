@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="飞奔的弹幕君">
 <meta property="og:description" content="2018-6-15 1. 条件随机场(CRF)&amp;ensp;&amp;ensp;特征函数仅使用当前单词和它前一个单词的标签对标注序列进行评价，这类CRF是最简单的线性链CRF  首先定义特征函数集合，该函数以整个句子s、当前位置i、位置i和i-1的标签为输入 为每个特征函数赋予一个权重 对每个标注序列I，对所有的特征函数加权求和，而且可以将求和的结果经过softmax处理转换为概率值评价函数为 \sum_{">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-15T08:37:38.237Z">
+<meta property="og:updated_time" content="2018-07-08T14:50:10.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="日积月累1">
 <meta name="twitter:description" content="2018-6-15 1. 条件随机场(CRF)&amp;ensp;&amp;ensp;特征函数仅使用当前单词和它前一个单词的标签对标注序列进行评价，这类CRF是最简单的线性链CRF  首先定义特征函数集合，该函数以整个句子s、当前位置i、位置i和i-1的标签为输入 为每个特征函数赋予一个权重 对每个标注序列I，对所有的特征函数加权求和，而且可以将求和的结果经过softmax处理转换为概率值评价函数为 \sum_{">
@@ -411,6 +411,7 @@
 <script type="math/tex; mode=display">p(l|s) = \frac{exp[score(l|s)]}{\sum_{l^`}exp[score(l^`|s)]}</script><blockquote>
 <p>逻辑回归是用于分类的对数线性模型；条件随机场是用于<strong>序列化标注</strong>的对数线性模型</p>
 </blockquote>
+<h3 id="2-Keras中TimeDistributed层用法"><a href="#2-Keras中TimeDistributed层用法" class="headerlink" title="2.Keras中TimeDistributed层用法"></a>2.Keras中TimeDistributed层用法</h3><p>作者解释：TimeDistributed将同样的密集(全连接)操作应用到3D张量的每一个时间间隔上<br>LSTM的输入必须是3维或以上<br>如果将时序信号看作是2D矩阵，则TimeDistributed包装后的Dense就是分别对矩阵的每一行进行全连接</p>
 
       
     </div>
@@ -450,6 +451,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/模型训练技巧.html" rel="prev" title="模型训练技巧">
+                模型训练技巧 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -536,7 +541,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -547,7 +552,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -558,7 +563,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -608,7 +613,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-条件随机场-CRF"><span class="nav-number">1.</span> <span class="nav-text">1. 条件随机场(CRF)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-条件随机场-CRF"><span class="nav-number">1.</span> <span class="nav-text">1. 条件随机场(CRF)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Keras中TimeDistributed层用法"><span class="nav-number">2.</span> <span class="nav-text">2.Keras中TimeDistributed层用法</span></a></li></ol></div>
             
 
           </div>
@@ -626,7 +631,7 @@
             <h3 class="widget-title">Tag Cloud</h3>
           <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width=100%">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-调用Python/">C++调用Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dlib/">dlib</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fopen/">fopen</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/matlab/">matlab</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opencv/">opencv</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime配置/">sublime配置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu系统/">ubuntu系统</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日积月累/">日积月累</a><span class="tag-list-count">1</span></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/">C++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-调用Python/">C++调用Python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dlib/">dlib</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fopen/">fopen</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/matlab/">matlab</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opencv/">opencv</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime配置/">sublime配置</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu系统/">ubuntu系统</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日积月累/">日积月累</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/模型训练/">模型训练</a><span class="tag-list-count">1</span></li></ul>
                 </canvas>
           </div>
           </div>

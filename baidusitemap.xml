@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://2033329616.github.io/%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF.html</loc>
-    <lastmod>2018-06-15T08:37:38.237Z</lastmod>
+    <lastmod>2018-07-08T14:50:10.516Z</lastmod>
     <data>
         <display>
         <title>日积月累1</title>
@@ -17,6 +17,46 @@
            
              
               <breadCrumb title="日积月累" url="https://2033329616.github.io/categories/%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://2033329616.github.io/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E6%8A%80%E5%B7%A7.html</loc>
+    <lastmod>2018-07-08T14:50:02.819Z</lastmod>
+    <data>
+        <display>
+        <title>模型训练技巧</title>
+        <pubTime>2018-07-08T13:13:37.644Z</pubTime>
+        
+        <tag>模型训练</tag>
+         
+         
+           
+             
+              <breadCrumb title="模型训练" url="https://2033329616.github.io/categories/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://2033329616.github.io/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</loc>
+    <lastmod>2018-06-29T14:33:09.785Z</lastmod>
+    <data>
+        <display>
+        <title>python学习笔记(1)</title>
+        <pubTime>2018-04-20T12:49:59.065Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="Python" url="https://2033329616.github.io/categories/Python/"/>
           
         </display>
     </data>
@@ -136,26 +176,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://2033329616.github.io/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html</loc>
-    <lastmod>2018-04-21T09:21:14.406Z</lastmod>
-    <data>
-        <display>
-        <title>python学习笔记</title>
-        <pubTime>2018-04-20T12:49:59.065Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="https://2033329616.github.io/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
     
 </urlset>
