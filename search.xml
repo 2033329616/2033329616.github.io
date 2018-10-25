@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux系统的硬盘挂载问题]]></title>
+    <url>%2Fimages%2FLinux%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%A1%AC%E7%9B%98%E6%8C%82%E8%BD%BD%E9%97%AE%E9%A2%98.html</url>
+    <content type="text"><![CDATA[2018-10-24 1.设置硬盘权限在命令行输入sudo nautilus以管理员权限打开文件管理器，选中需要设置的硬盘，进入属性设置，将Permissions中Group设置为与Others位置的Access选项均设置为Create and delete files，Group设置为sudo，操作如下图： 在设置硬盘的权限后，所有sudo用户组的用户都可以访问该硬盘并进行文件的添加或删除操作，当然硬盘的Access权限也可以设置为其他模式。 2.硬盘的挂载与卸载2.1 普通的挂载方法使用sudo fdisk -l查看硬盘的分区信息，结果如下： 这里将/dev/sdb4分区的硬盘挂载到/media/zw目录下(该目录预先创建好)，使用sudo mount /dev/sdb4 /media/zw进行挂载，然后使用df -h查看硬盘的挂载情况，结果如下： 使用sudo umount /media/zw可以卸载该硬盘 2.2 设置开机自动挂载硬盘使用lsblk -f查看硬盘的文件系统类型，结果如下： 编辑/etc/fstab文件来设置永久挂载，首先使用sudo vim /etc/fstab打开并编辑该文件，编辑结果如下： 第一列表示硬盘分区位置，第二列表示挂载点，为了保证兼容性，disk下的3个文件夹都使用chmod设置为777，第三列表示硬盘的文件系统类型，从上面的结果可以查到，后三列选择默认就行，然后重启电脑就行了 参考：inux命令-自动挂载文件/etc/fstab功能详解[转]]]></content>
+      <categories>
+        <category>自定义</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[模型训练技巧]]></title>
     <url>%2F%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83%E6%8A%80%E5%B7%A7.html</url>
     <content type="text"><![CDATA[2018-7-8 1. 卷积神经网络主要针对tensorflow框架 使用 ADAM 优化器，如果你想要保存和恢复模型权重，请记住在设置完 AdamOptimizer 后设置 Saver，这是因为 ADAM 也有需要恢复的状态(即对应于每个权重的学习率)，通常选0.001的学习率比较好，该优化器已经考虑了梯度衰减，所以不用手动添加，因此即使减小学习率也没有太多的帮助 ReLU激活函数，可以解决梯度消失问题，并提高迭代的速度 输出层后不要加激活函数 使用方差缩放初始化，这种初始化方法比常规高斯分布初始化、截断高斯分布初始化及 Xavier 初始化的泛化/缩放性能更好 白化(归一化)输入数据，在训练中，令样本点的值减去数据集的均值，然后除以它的标准差 池化为了变换不变性(tansform invariance)，使网络学习图像的某个部分，卷积神经网络的池化可以起到对特征平移、旋转和缩放的鲁棒性 批归一化可能隐藏初始化导致的梯度爆炸，所以可以将batch_size设置为1，删除归一化层观察梯度的变化 参考：构建深度神经网络，我有20条「不成熟」的小建议]]></content>
