@@ -89,15 +89,15 @@
 <meta property="og:site_name" content="飞奔的弹幕君">
 <meta property="og:description" content="2017-8-10 1.dlib安装步骤ubuntu下最好别用anaconda，会出现很多问题，宁可自己安装各种包！  sudo apt-get install build-essential cmakesudo apt-get install libgtk-3-devsudo apt-get install libboost-all-devsudo apt-get install libopen">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/error1.jpg">
-<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox0.jpg">
-<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox.jpg">
-<meta property="og:image" content="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox2_1.jpg">
-<meta property="og:updated_time" content="2018-04-21T16:01:08.460Z">
+<meta property="og:image" content="https://github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/error1.jpg">
+<meta property="og:image" content="https://github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox0.jpg">
+<meta property="og:image" content="https://github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox.jpg">
+<meta property="og:image" content="https://github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox2_1.jpg">
+<meta property="og:updated_time" content="2018-11-15T08:52:17.176Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="dlib安装总结">
 <meta name="twitter:description" content="2017-8-10 1.dlib安装步骤ubuntu下最好别用anaconda，会出现很多问题，宁可自己安装各种包！  sudo apt-get install build-essential cmakesudo apt-get install libgtk-3-devsudo apt-get install libboost-all-devsudo apt-get install libopen">
-<meta name="twitter:image" content="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/error1.jpg">
+<meta name="twitter:image" content="https://github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/error1.jpg">
 
 
 
@@ -442,7 +442,7 @@
 <ol>
 <li>配置opencv.conf file ，加入环境变量</li>
 </ol>
-<p><img src="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/error1.jpg" alt="enter description here" title="不进行此步骤出现的错误"></p>
+<p><img src="https://github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/error1.jpg" alt="enter description here" title="不进行此步骤出现的错误"></p>
 <blockquote>
 <p><code>sudo gedit /etc/ld.so.conf.d/opencv.conf</code></p>
 <p>如果没有该文件，则上述的命令会创建该文件，在opencv.conf里面加入 <code>/usr/local/lib</code></p>
@@ -470,12 +470,12 @@
 <p><code>cheese</code>  #在ubuntu里可以打开摄像头</p>
 </blockquote>
 <p>  如果打不开，则需要设置virtualbox。<br>  1.首先去官网下载virtualbox的扩展包进行安装，如下图：</p>
-<p>  <img src="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox0.jpg" alt="enter description here" title="3.1 安装扩展包"></p>
+<p>  <img src="https://github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox0.jpg" alt="enter description here" title="3.1 安装扩展包"></p>
 <ol>
 <li>然后设置虚拟机的usb选项，并勾选设备选项里的摄像头选项</li>
 </ol>
-<p><img src="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox.jpg" alt="enter description here" title="3.2 设置usb控制器为usb2.0"></p>
-<p> <img src="http://p7jji9nvf.bkt.clouddn.com/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox2_1.jpg" alt="enter description here" title="3.3 勾选设备选项里的摄像头"></p>
+<p><img src="https://github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox.jpg" alt="enter description here" title="3.2 设置usb控制器为usb2.0"></p>
+<p> <img src="https://github.com/2033329616/image_hosting/raw/master/%E5%B0%8F%E4%B9%A6%E5%8C%A0/virtualbox2_1.jpg" alt="enter description here" title="3.3 勾选设备选项里的摄像头"></p>
 <p>  设置好后再使用<code>cheese</code>指令打开摄像头，或运行与摄像头相关的程序，由于是虚拟机的原因摄像头比较卡。</p>
 <h3 id="4-whl文件安装中的问题处理"><a href="#4-whl文件安装中的问题处理" class="headerlink" title="4.whl文件安装中的问题处理"></a>4.whl文件安装中的问题处理</h3><p> 原文件： <code>opencv_python-3.1.0-cp34-cp34m-win_amd64.whl</code>，<br>改后的文件：<code>opencv_python-3.1.0-cp34-none-win_amd64.whl</code><br> <strong>把原来文件名中间的cp34m变为none(其实不改也能安装成功)，并且cp34要和python的版本对应，如cp36表示python版本3.6，如果不改的话不然会出现下面的问题：(但只是更改版本号可能会带来兼容性问题)</strong></p>
 <p>opencv_python-3.1.0-cp34-cp34m-win_amd64.whl is not a supported wheel on this platform.</p>
